@@ -19,4 +19,6 @@ vim.api.nvim_set_keymap("n", "]g", ":cn<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "[g", ":cp<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>h", ":nohl<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-q>", ":cope<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "n", "nzz", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "N", "Nzz", { noremap = true, silent = true })
 
