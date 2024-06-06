@@ -18,15 +18,8 @@ return {
     { "mattn/emmet-vim" },
     {
         "ThePrimeagen/harpoon",
-        config = function()
-            require("harpoon").setup({
-                tabline = true,
-                width = vim.api.nvim_win_get_width(0) - 4,
-                menu = {
-                    width = vim.api.nvim_win_get_width(0) - 50,
-                },
-            })
-        end,
+        branch = "harpoon2",
+        depends = { "nvim-lua/plenary.nvim" }
     },
     { "mbbill/undotree" },
     {
