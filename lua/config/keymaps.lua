@@ -1,15 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local harpoon = require("harpoon")
-
--- REQUIRED
-harpoon:setup()
--- REQUIRED
-
-vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
-vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
-
 vim.api.nvim_set_keymap("n", "<Leader>uu", ":UndotreeToggle<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>gh", ":DiffviewFileHistory %<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>qq", ":DiffviewClose<CR>", { noremap = true, silent = true })
