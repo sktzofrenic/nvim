@@ -13,6 +13,12 @@ vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true
 vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "n", "nzz", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "N", "Nzz", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mc', ":lua MiniMap.close()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mf', ":lua MiniMap.toggle_focus()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mo', ":lua MiniMap.open()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mr', ":lua MiniMap.refresh()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ms', ":lua MiniMap.toggle_side()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>mt', ":lua MiniMap.toggle()<CR>", { noremap = true, silent = true })
 
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
     expr = true,
