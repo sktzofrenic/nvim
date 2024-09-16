@@ -1,9 +1,12 @@
 return {
   "akinsho/toggleterm.nvim",
   keys = {
-    { [[<C-\>]] },
-    { "<A-1>", "<Cmd>3ToggleTerm<Cr>", desc = "Terminal #3" },
-    { "<leader>0", "<Cmd>2ToggleTerm<Cr>", desc = "Terminal #2" },
+    { "<A-1>", "<Cmd>1ToggleTerm<Cr>", desc = "Terminal #1" },
+    { "<A-2>", "<Cmd>2ToggleTerm<Cr>", desc = "Terminal #2" },
+    { "<A-3>", "<Cmd>3ToggleTerm<Cr>", desc = "Terminal #3" },
+    { "<A-4>", "<Cmd>4ToggleTerm<Cr>", desc = "Terminal #4" },
+    { "<A-5>", "<Cmd>5ToggleTerm<Cr>", desc = "Terminal #5" },
+    { "<A-6>", "<Cmd>6ToggleTerm<Cr>", desc = "Terminal #6" },
   },
   cmd = { "ToggleTerm", "TermExec" },
   opts = {
