@@ -17,7 +17,10 @@ vim.api.nvim_set_keymap('n', '<Leader>mo', ":lua MiniMap.open()<CR>", { noremap 
 vim.api.nvim_set_keymap('n', '<Leader>mr', ":lua MiniMap.refresh()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>ms', ":lua MiniMap.toggle_side()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>mt', ":lua MiniMap.toggle()<CR>", { noremap = true, silent = true })
-vim.keymap.set({'i', 'n'}, '<C-c>', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-c>', "<cmd>noh<cr><esc>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-c>', "<cmd>noh<cr><esc>", { silent = true })
+vim.api.nvim_set_keymap('i', '<F1>', '<Esc>', { noremap = true, silent = true })
+
 
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
     expr = true,
