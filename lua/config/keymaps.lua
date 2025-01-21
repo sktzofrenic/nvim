@@ -20,6 +20,7 @@ vim.api.nvim_set_keymap('n', '<Leader>mt', ":lua MiniMap.toggle()<CR>", { norema
 vim.api.nvim_set_keymap('n', '<C-c>', "<cmd>noh<cr><esc>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-c>', "<cmd>noh<cr><esc>", { silent = true })
 vim.api.nvim_set_keymap('i', '<F1>', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<F1>', '<Esc>', { noremap = true, silent = true })
 
 
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
