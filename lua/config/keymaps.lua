@@ -4,7 +4,6 @@
 vim.api.nvim_set_keymap("n", "<Leader>uu", ":UndotreeToggle<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>gh", ":DiffviewFileHistory %<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>qq", ":DiffviewClose<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<Leader>hh", ":Telescope find_files hidden=true no_ignore=true<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "]g", ":cn<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "[g", ":cp<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>h", ":nohl<CR>", { noremap = true, silent = true })
