@@ -1,6 +1,6 @@
 return {
     {
-        'echasnovski/mini.map',
+        'nvim-mini/mini.map',
         config = function()
             require('mini.map').setup({
                 -- your configuration comes here
