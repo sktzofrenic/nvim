@@ -15,7 +15,6 @@ return {
             { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
         },
     },
-    { "mattn/emmet-vim" },
     { "mbbill/undotree" },
     {
         "cbochs/grapple.nvim",
